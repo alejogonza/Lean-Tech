@@ -1,0 +1,3 @@
+id_product, reference, description, unit, SalePrice, Status
+113,zangano,animal,31,5000,Available
+114,abeja,insecto,33,3000,Unavailable
