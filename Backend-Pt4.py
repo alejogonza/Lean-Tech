@@ -11,4 +11,5 @@ def reader ():
   statuslookup='unavailable'#Criteria to evaluate Column Status.
   query2tostatus=dfcsv[dfcsv['Status'].str.contains(statuslookup,case=False)]
   print('Busqueda 2: ', '\n', query2tostatus)#Show result
-reader()
+reader()#Execute function
+#Notes: code must be run with file "tabla.csv" available inside repository. Values adjusted according to the table.
