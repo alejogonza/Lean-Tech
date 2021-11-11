@@ -1,0 +1,14 @@
+<form class="dropdown-form">
+    <mat-form-field class="dropdown-full-width" appearance="fill">
+        <mat-label>City</mat-label>
+        <input type="text"
+                matInput
+                [formControl]="dropDownControl"
+                [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+        <mat-option (click) = "searchWeather(option)" *ngFor="let option of filteredOptions | async" [value]="option">
+            {{option}}
+        </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>

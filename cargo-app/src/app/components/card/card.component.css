@@ -1,0 +1,59 @@
+.card {
+
+}
+
+.card-center {
+    text-align: center;
+    width: 100%;
+}
+
+.card-weather {
+    height: 6em;
+    position: relative;
+    width: 20em;
+}
+
+.card-weather .card-number {
+    font-size: 4em;
+    position: absolute;
+    right: 30%;
+    top: 20px;
+    color: orange;
+}
+
+.card-weather .card-c {
+    position: absolute;
+    left: 72%;
+    top: 1em;
+}
+
+.card-weather .card-k {
+    position: absolute;
+    left: 72%;
+    top: 3em;
+}
+
+.card-weather .card-f {
+    position: absolute;
+    left: 72%;
+    top: 5em;
+}
+
+.card-button {
+    background: orange;
+    border-color: orange;
+    color: white;
+    padding: 10px;
+}
+
+.active {
+    background: orange;
+    border-color: orange;
+    color: white;
+}
+
+.inactive {
+    background: white;
+    border-color: white;
+    color: black;
+}

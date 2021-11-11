@@ -1,0 +1,13 @@
+<mat-card class="card">
+    <mat-card-title class="card-center">{{title}}</mat-card-title>
+    <mat-card-content class="card-center">
+        <div class="card-weather">
+            <div class="card-number">{{temp | formattemp:unit}}°</div>
+            <div class="card-c"><button (click)="transformUnit('C')" [ngClass]="{'active' : unit == 'C', 'inactive': unit != 'C'}">C</button></div>
+            <div class="card-f"><button (click)="transformUnit('F')" [ngClass]="{'active' : unit == 'F', 'inactive': unit != 'F'}">F</button></div>
+            <div class="card-k"><button (click)="transformUnit('K')" [ngClass]="{'active' : unit == 'K', 'inactive': unit != 'K'}">K</button></div>
+        </div>
+        <p >{{description}}</p>
+        <button class="card-button">Update</button>
+    </mat-card-content>
+</mat-card>
