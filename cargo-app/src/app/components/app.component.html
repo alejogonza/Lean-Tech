@@ -1,0 +1,6 @@
+<app-dropdown (onCitySelected)="loadInformation($event)"></app-dropdown>
+<mat-grid-list cols="2">
+  <mat-grid-tile *ngFor="let info of infoList">
+    <app-card [title]=info.title [temp]=info.temp [description]="info.description" [icon]="info.icon"></app-card>
+  </mat-grid-tile>
+</mat-grid-list>
